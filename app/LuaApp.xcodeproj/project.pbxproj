@@ -13,6 +13,7 @@
 		AF7F6F9A208107E7000A8C4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F6F99208107E7000A8C4C /* main.m */; };
 		AF7F73D1208112D3000A8C4C /* html in Resources */ = {isa = PBXBuildFile; fileRef = AF7F73D0208112D3000A8C4C /* html */; };
 		CEA7F3DC2B4F9A5B0064090F /* luascript in Resources */ = {isa = PBXBuildFile; fileRef = CEA7F3DB2B4F9A5B0064090F /* luascript */; };
+		CEA7F4EB2B4FF7B10064090F /* lua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA7F4EA2B4FF7B10064090F /* lua.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AF7F6F99208107E7000A8C4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF7F73D0208112D3000A8C4C /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 		CEA7F3DB2B4F9A5B0064090F /* luascript */ = {isa = PBXFileReference; lastKnownFileType = folder; path = luascript; sourceTree = "<group>"; };
+		CEA7F4EA2B4FF7B10064090F /* lua.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = lua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA7F4EB2B4FF7B10064090F /* lua.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				AF7F6F89208107E7000A8C4C /* LuaApp */,
 				AF7F6F88208107E7000A8C4C /* Products */,
+				CEA7F4E92B4FF7B10064090F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +73,14 @@
 				AF7F6F99208107E7000A8C4C /* main.m */,
 			);
 			path = LuaApp;
+			sourceTree = "<group>";
+		};
+		CEA7F4E92B4FF7B10064090F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7F4EA2B4FF7B10064090F /* lua.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

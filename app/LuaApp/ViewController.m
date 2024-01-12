@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <WebKit/WebKit.h>
+#import <lua/lua.hpp>
 
 
 @interface ViewController ()
@@ -20,6 +21,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self layoutWebView];
+    
+    lua_State * L = luaL_newstate();
+    luaL_openlibs(L);
 }
 
 - (void)layoutWebView {
