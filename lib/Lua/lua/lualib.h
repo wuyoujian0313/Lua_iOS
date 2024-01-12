@@ -7,6 +7,8 @@
 
 #ifndef lualib_h
 #define lualib_h
+
+
 // 编译.a时，使用""引入头文件
 //#include "lua.h"
 
