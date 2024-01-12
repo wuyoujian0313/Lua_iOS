@@ -12,9 +12,11 @@
 #include <stdarg.h>
 #include <stddef.h>
 
+// 编译.a时，使用""引入头文件
+//#include "luaconf.h"
 
-#include "luaconf.h"
-
+// 编译.framework时，使用<>引入头文件
+#import <Lua/luaconf.h>
 
 #define LUA_VERSION_MAJOR	"5"
 #define LUA_VERSION_MINOR	"4"

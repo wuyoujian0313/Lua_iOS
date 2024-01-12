@@ -18,15 +18,15 @@
 			name = lualib_public;
 			productName = Lua_public;
 		};
-		CEA7F4E42B4FEF3E0064090F /* lua_public */ = {
+		CEA7F4E42B4FEF3E0064090F /* Lua_public */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = CEA7F4E62B4FEF3E0064090F /* Build configuration list for PBXAggregateTarget "lua_public" */;
+			buildConfigurationList = CEA7F4E62B4FEF3E0064090F /* Build configuration list for PBXAggregateTarget "Lua_public" */;
 			buildPhases = (
 				CEA7F4E52B4FEF3E0064090F /* ShellScript */,
 			);
 			dependencies = (
 			);
-			name = lua_public;
+			name = Lua_public;
 			productName = mgadLua_public;
 		};
 /* End PBXAggregateTarget section */
@@ -108,7 +108,7 @@
 		CEA7F4D92B4FE9B50064090F /* lutf8lib.c in Sources */ = {isa = PBXBuildFile; fileRef = CE0BD4EB2B3D8A75008A9B02 /* lutf8lib.c */; };
 		CEA7F4DA2B4FE9B50064090F /* lvm.c in Sources */ = {isa = PBXBuildFile; fileRef = CE0BD4D12B3D8A75008A9B02 /* lvm.c */; };
 		CEA7F4DB2B4FE9B50064090F /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = CE0BD4E92B3D8A75008A9B02 /* lzio.c */; };
-		CEA7F4FF2B512B7F0064090F /* lua.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CEA7F4FE2B512B7F0064090F /* lua.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEA7F4FF2B512B7F0064090F /* Lua.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CEA7F4FE2B512B7F0064090F /* Lua.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -192,8 +192,8 @@
 		CE0BD4FD2B3D8A75008A9B02 /* lctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lctype.h; sourceTree = "<group>"; };
 		CE0BD4FE2B3D8A75008A9B02 /* ldo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ldo.c; sourceTree = "<group>"; };
 		CE0BD4FF2B3D8A75008A9B02 /* lundump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lundump.h; sourceTree = "<group>"; };
-		CEA7F4E12B4FE9B50064090F /* lua.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = lua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA7F4FE2B512B7F0064090F /* lua.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lua.hpp; sourceTree = "<group>"; };
+		CEA7F4E12B4FE9B50064090F /* Lua.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA7F4FE2B512B7F0064090F /* Lua.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Lua.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,7 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				CE0BD4B52B3D896C008A9B02 /* liblua.a */,
-				CEA7F4E12B4FE9B50064090F /* lua.framework */,
+				CEA7F4E12B4FE9B50064090F /* Lua.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,7 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				CE0BD4C12B3D8A75008A9B02 /* lua */,
-				CEA7F4FE2B512B7F0064090F /* lua.hpp */,
+				CEA7F4FE2B512B7F0064090F /* Lua.hpp */,
 			);
 			path = Lua;
 			sourceTree = "<group>";
@@ -318,7 +318,7 @@
 			files = (
 				CEA7F4B62B4FE9B50064090F /* lauxlib.h in Headers */,
 				CEA7F4B72B4FE9B50064090F /* lualib.h in Headers */,
-				CEA7F4FF2B512B7F0064090F /* lua.hpp in Headers */,
+				CEA7F4FF2B512B7F0064090F /* Lua.hpp in Headers */,
 				CEA7F4B82B4FE9B50064090F /* lua.h in Headers */,
 				CEA7F4B92B4FE9B50064090F /* luaconf.h in Headers */,
 			);
@@ -344,9 +344,9 @@
 			productReference = CE0BD4B52B3D896C008A9B02 /* liblua.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		CEA7F4B32B4FE9B50064090F /* lua */ = {
+		CEA7F4B32B4FE9B50064090F /* Lua */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEA7F4DE2B4FE9B50064090F /* Build configuration list for PBXNativeTarget "lua" */;
+			buildConfigurationList = CEA7F4DE2B4FE9B50064090F /* Build configuration list for PBXNativeTarget "Lua" */;
 			buildPhases = (
 				CEA7F4B42B4FE9B50064090F /* Headers */,
 				CEA7F4BA2B4FE9B50064090F /* Sources */,
@@ -357,9 +357,9 @@
 			);
 			dependencies = (
 			);
-			name = lua;
+			name = Lua;
 			productName = mgadLua;
-			productReference = CEA7F4E12B4FE9B50064090F /* lua.framework */;
+			productReference = CEA7F4E12B4FE9B50064090F /* Lua.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -394,8 +394,8 @@
 			targets = (
 				CE0BD4B42B3D896C008A9B02 /* lualib */,
 				CEA7F3EE2B4FC5F80064090F /* lualib_public */,
-				CEA7F4B32B4FE9B50064090F /* lua */,
-				CEA7F4E42B4FEF3E0064090F /* lua_public */,
+				CEA7F4B32B4FE9B50064090F /* Lua */,
+				CEA7F4E42B4FEF3E0064090F /* Lua_public */,
 			);
 		};
 /* End PBXProject section */
@@ -443,7 +443,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\n#设置编译的target\ntargetName=\"lua\"\n#设置生成的framework的名称\nframeworkName=${targetName}\n#模拟器版本编译产物路径\nsimultorArchivePath=\"${BUILD_DIR}/${CONFIGURATION}/${frameworkName}-iphonesimulator.xcarchive\"\n#真机版本编译产物路径\ndeviceArchivePath=\"${BUILD_DIR}/${CONFIGURATION}/${frameworkName}-iphoneos.xcarchive\"\n#存储编译后产物的存储路径\noutput=${SRCROOT}/Products\n\n#删除上次编译后的产物\nrm -rf \"${output}\"\n\n#编译模拟器版本\nxcodebuild archive \\\n  -scheme ${targetName} \\\n  -archivePath ${simultorArchivePath} \\\n  -sdk iphonesimulator \\\n  SKIP_INSTALL=NO \\\n  BUILD_LIBRARIES_FOR_DISTRIBUTION=YES\n\n#编译真机版本\nxcodebuild archive \\\n  -scheme ${targetName} \\\n  -archivePath ${deviceArchivePath} \\\n  -sdk iphoneos \\\n  SKIP_INSTALL=NO \\\n  BUILD_LIBRARIES_FOR_DISTRIBUTION=YES\n\n#合并真机和模拟器版本,生成xcframework\nxcodebuild -create-xcframework \\\n  -framework ${simultorArchivePath}/Products/Library/Frameworks/${frameworkName}.framework \\\n  -framework ${deviceArchivePath}/Products/Library/Frameworks/${frameworkName}.framework \\\n  -output ${output}/${frameworkName}.xcframework\n\n#打开编译后产物路径\nopen ${output}\n\n\n";
+			shellScript = "\n#设置编译的target\ntargetName=\"Lua\"\n#设置生成的framework的名称\nframeworkName=${targetName}\n#模拟器版本编译产物路径\nsimultorArchivePath=\"${BUILD_DIR}/${CONFIGURATION}/${frameworkName}-iphonesimulator.xcarchive\"\n#真机版本编译产物路径\ndeviceArchivePath=\"${BUILD_DIR}/${CONFIGURATION}/${frameworkName}-iphoneos.xcarchive\"\n#存储编译后产物的存储路径\noutput=${SRCROOT}/Products\n\n#删除上次编译后的产物\nrm -rf \"${output}\"\n\n#编译模拟器版本\nxcodebuild archive \\\n  -scheme ${targetName} \\\n  -archivePath ${simultorArchivePath} \\\n  -sdk iphonesimulator \\\n  SKIP_INSTALL=NO \\\n  BUILD_LIBRARIES_FOR_DISTRIBUTION=YES\n\n#编译真机版本\nxcodebuild archive \\\n  -scheme ${targetName} \\\n  -archivePath ${deviceArchivePath} \\\n  -sdk iphoneos \\\n  SKIP_INSTALL=NO \\\n  BUILD_LIBRARIES_FOR_DISTRIBUTION=YES\n\n#合并真机和模拟器版本,生成xcframework\nxcodebuild -create-xcframework \\\n  -framework ${simultorArchivePath}/Products/Library/Frameworks/${frameworkName}.framework \\\n  -framework ${deviceArchivePath}/Products/Library/Frameworks/${frameworkName}.framework \\\n  -output ${output}/${frameworkName}.xcframework\n\n#打开编译后产物路径\nopen ${output}\n\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -687,6 +687,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -696,6 +700,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -730,7 +735,7 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = wm.lua;
-				PRODUCT_MODULE_NAME = "";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -767,7 +772,7 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = wm.lua;
-				PRODUCT_MODULE_NAME = "";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -782,6 +787,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					LUA_FRAME,
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -791,6 +801,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = LUA_FRAME;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -825,7 +836,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEA7F4DE2B4FE9B50064090F /* Build configuration list for PBXNativeTarget "lua" */ = {
+		CEA7F4DE2B4FE9B50064090F /* Build configuration list for PBXNativeTarget "Lua" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEA7F4DF2B4FE9B50064090F /* Debug */,
@@ -834,7 +845,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEA7F4E62B4FEF3E0064090F /* Build configuration list for PBXAggregateTarget "lua_public" */ = {
+		CEA7F4E62B4FEF3E0064090F /* Build configuration list for PBXAggregateTarget "Lua_public" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEA7F4E72B4FEF3E0064090F /* Debug */,

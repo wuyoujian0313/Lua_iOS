@@ -7,7 +7,7 @@
 //
 
 #import "WMLuaRunner.h"
-#import <lua/lua.hpp>
+#import <Lua/Lua.hpp>
 
 @implementation WMLuaRunner
 

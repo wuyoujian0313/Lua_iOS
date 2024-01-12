@@ -11,8 +11,8 @@
 		AF7F6F8F208107E7000A8C4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F6F8E208107E7000A8C4C /* ViewController.m */; };
 		AF7F6F9A208107E7000A8C4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F6F99208107E7000A8C4C /* main.m */; };
 		CEA7F3DC2B4F9A5B0064090F /* luascript in Resources */ = {isa = PBXBuildFile; fileRef = CEA7F3DB2B4F9A5B0064090F /* luascript */; };
-		CEA7F4EB2B4FF7B10064090F /* lua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA7F4EA2B4FF7B10064090F /* lua.framework */; };
 		CEA7F4FD2B50D6B50064090F /* WMLuaRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7F4FC2B50D6B50064090F /* WMLuaRunner.m */; };
+		CEA7F5292B5140730064090F /* Lua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA7F5282B5140730064090F /* Lua.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +27,7 @@
 		CEA7F4EA2B4FF7B10064090F /* lua.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = lua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA7F4FB2B50D6B50064090F /* WMLuaRunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMLuaRunner.h; sourceTree = "<group>"; };
 		CEA7F4FC2B50D6B50064090F /* WMLuaRunner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMLuaRunner.m; sourceTree = "<group>"; };
+		CEA7F5282B5140730064090F /* Lua.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA7F4EB2B4FF7B10064090F /* lua.framework in Frameworks */,
+				CEA7F5292B5140730064090F /* Lua.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +77,7 @@
 		CEA7F4E92B4FF7B10064090F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEA7F5282B5140730064090F /* Lua.framework */,
 				CEA7F4EA2B4FF7B10064090F /* lua.framework */,
 			);
 			name = Frameworks;

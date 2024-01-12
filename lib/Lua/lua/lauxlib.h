@@ -12,9 +12,19 @@
 #include <stddef.h>
 #include <stdio.h>
 
-#include "luaconf.h"
-#include "lua.h"
+// 编译.a时，使用""引入头文件
+//#include "luaconf.h"
+//#include "lua.h"
 
+
+// 编译.framework时，使用<>引入头文件
+#import <Lua/luaconf.h>
+
+// 忽略编译警告
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wnonportable-include-path"
+#import <Lua/lua.h>
+#pragma clang diagnostic pop
 
 /* global table */
 #define LUA_GNAME	"_G"
