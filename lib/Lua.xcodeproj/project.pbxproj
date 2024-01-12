@@ -108,7 +108,7 @@
 		CEA7F4D92B4FE9B50064090F /* lutf8lib.c in Sources */ = {isa = PBXBuildFile; fileRef = CE0BD4EB2B3D8A75008A9B02 /* lutf8lib.c */; };
 		CEA7F4DA2B4FE9B50064090F /* lvm.c in Sources */ = {isa = PBXBuildFile; fileRef = CE0BD4D12B3D8A75008A9B02 /* lvm.c */; };
 		CEA7F4DB2B4FE9B50064090F /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = CE0BD4E92B3D8A75008A9B02 /* lzio.c */; };
-		CEA7F4E32B4FED5D0064090F /* lua.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CE0BD4CB2B3D8A75008A9B02 /* lua.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEA7F4FF2B512B7F0064090F /* lua.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CEA7F4FE2B512B7F0064090F /* lua.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -193,6 +193,7 @@
 		CE0BD4FE2B3D8A75008A9B02 /* ldo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ldo.c; sourceTree = "<group>"; };
 		CE0BD4FF2B3D8A75008A9B02 /* lundump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lundump.h; sourceTree = "<group>"; };
 		CEA7F4E12B4FE9B50064090F /* lua.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = lua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA7F4FE2B512B7F0064090F /* lua.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = lua.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				CE0BD4C12B3D8A75008A9B02 /* lua */,
+				CEA7F4FE2B512B7F0064090F /* lua.hpp */,
 			);
 			path = Lua;
 			sourceTree = "<group>";
@@ -316,7 +318,7 @@
 			files = (
 				CEA7F4B62B4FE9B50064090F /* lauxlib.h in Headers */,
 				CEA7F4B72B4FE9B50064090F /* lualib.h in Headers */,
-				CEA7F4E32B4FED5D0064090F /* lua.hpp in Headers */,
+				CEA7F4FF2B512B7F0064090F /* lua.hpp in Headers */,
 				CEA7F4B82B4FE9B50064090F /* lua.h in Headers */,
 				CEA7F4B92B4FE9B50064090F /* luaconf.h in Headers */,
 			);
@@ -654,6 +656,7 @@
 					"DEBUG=1",
 					LUA_USE_IOS,
 					"$(inherited)",
+					LUALIB,
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_MODULE_NAME = lua;
@@ -667,7 +670,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PREPROCESSOR_DEFINITIONS = LUA_USE_IOS;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					LUA_USE_IOS,
+					LUALIB,
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_MODULE_NAME = lua;
 				PRODUCT_NAME = lua;
