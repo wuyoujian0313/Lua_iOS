@@ -7,38 +7,37 @@
 //
 
 #import "ViewController.h"
-#import <WebKit/WebKit.h>
-#import <lua/lua.hpp>
+#import "WMLuaRunner.h"
 
 
 @interface ViewController ()
-@property (nonatomic,strong) WKWebView  *wkWebView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    [self layoutWebView];
+    self.view.backgroundColor = UIColor.whiteColor;
     
-    lua_State * L = luaL_newstate();
-    luaL_openlibs(L);
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button setClipsToBounds:YES];
+    [button.layer setCornerRadius:4.0];
+    [button.layer setBorderColor:UIColor.grayColor.CGColor];
+    [button.layer setBorderWidth:0.5];
+    [button setTitle:@"运行Lua" forState:UIControlStateNormal];
+    [button setFrame:CGRectMake(60, 100, 120, 40)];
+    [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
 }
 
-- (void)layoutWebView {
-    WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
-    //通过默认的构造器来创建对象
-    WKWebView *wkWebView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:config];
-    self.wkWebView = wkWebView;
-    [self.view addSubview:wkWebView];
-    
+
+- (void)buttonAction:(UIButton*)sender {
     NSBundle *mainBundle = [NSBundle mainBundle];
-    NSURL *url = [NSURL fileURLWithPath:[mainBundle pathForResource:@"index" ofType:@"html" inDirectory:@"html"]];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:30.0];
-    [_wkWebView loadRequest:request];
+    NSURL *url = [NSURL fileURLWithPath:[mainBundle pathForResource:@"main" ofType:@"lua" inDirectory:@"luascript"]];
+    NSString *luaScript = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+    
+    [[WMLuaRunner getInstance] runLua:luaScript];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

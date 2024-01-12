@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		AF7F6F8C208107E7000A8C4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F6F8B208107E7000A8C4C /* AppDelegate.m */; };
 		AF7F6F8F208107E7000A8C4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F6F8E208107E7000A8C4C /* ViewController.m */; };
-		AF7F6F94208107E7000A8C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7F6F93208107E7000A8C4C /* Assets.xcassets */; };
 		AF7F6F9A208107E7000A8C4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F6F99208107E7000A8C4C /* main.m */; };
-		AF7F73D1208112D3000A8C4C /* html in Resources */ = {isa = PBXBuildFile; fileRef = AF7F73D0208112D3000A8C4C /* html */; };
 		CEA7F3DC2B4F9A5B0064090F /* luascript in Resources */ = {isa = PBXBuildFile; fileRef = CEA7F3DB2B4F9A5B0064090F /* luascript */; };
 		CEA7F4EB2B4FF7B10064090F /* lua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA7F4EA2B4FF7B10064090F /* lua.framework */; };
+		CEA7F4FD2B50D6B50064090F /* WMLuaRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7F4FC2B50D6B50064090F /* WMLuaRunner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +21,12 @@
 		AF7F6F8B208107E7000A8C4C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AF7F6F8D208107E7000A8C4C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AF7F6F8E208107E7000A8C4C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AF7F6F93208107E7000A8C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF7F6F98208107E7000A8C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF7F6F99208107E7000A8C4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AF7F73D0208112D3000A8C4C /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 		CEA7F3DB2B4F9A5B0064090F /* luascript */ = {isa = PBXFileReference; lastKnownFileType = folder; path = luascript; sourceTree = "<group>"; };
 		CEA7F4EA2B4FF7B10064090F /* lua.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = lua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA7F4FB2B50D6B50064090F /* WMLuaRunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMLuaRunner.h; sourceTree = "<group>"; };
+		CEA7F4FC2B50D6B50064090F /* WMLuaRunner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMLuaRunner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +61,12 @@
 		AF7F6F89208107E7000A8C4C /* LuaApp */ = {
 			isa = PBXGroup;
 			children = (
+				CEA7F4F72B50D5F60064090F /* lua */,
 				CEA7F3DB2B4F9A5B0064090F /* luascript */,
-				AF7F73D0208112D3000A8C4C /* html */,
 				AF7F6F8A208107E7000A8C4C /* AppDelegate.h */,
 				AF7F6F8B208107E7000A8C4C /* AppDelegate.m */,
 				AF7F6F8D208107E7000A8C4C /* ViewController.h */,
 				AF7F6F8E208107E7000A8C4C /* ViewController.m */,
-				AF7F6F93208107E7000A8C4C /* Assets.xcassets */,
 				AF7F6F98208107E7000A8C4C /* Info.plist */,
 				AF7F6F99208107E7000A8C4C /* main.m */,
 			);
@@ -81,6 +79,15 @@
 				CEA7F4EA2B4FF7B10064090F /* lua.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEA7F4F72B50D5F60064090F /* lua */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7F4FB2B50D6B50064090F /* WMLuaRunner.h */,
+				CEA7F4FC2B50D6B50064090F /* WMLuaRunner.m */,
+			);
+			path = lua;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF7F6F94208107E7000A8C4C /* Assets.xcassets in Resources */,
 				CEA7F3DC2B4F9A5B0064090F /* luascript in Resources */,
-				AF7F73D1208112D3000A8C4C /* html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA7F4FD2B50D6B50064090F /* WMLuaRunner.m in Sources */,
 				AF7F6F8F208107E7000A8C4C /* ViewController.m in Sources */,
 				AF7F6F9A208107E7000A8C4C /* main.m in Sources */,
 				AF7F6F8C208107E7000A8C4C /* AppDelegate.m in Sources */,

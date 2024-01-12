@@ -10,8 +10,6 @@
 #import "ViewController.h"
 
 @interface AppDelegate ()
-@property(nonatomic,strong) UINavigationController *mainNav;
-@property(nonatomic,strong) ViewController *mainVC;
 @end
 
 @implementation AppDelegate
@@ -22,14 +20,8 @@
 
 - (void)layoutMainPage {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    ViewController *tempVC = [[ViewController alloc] init];
-    self.mainVC = tempVC;
-    
-    UINavigationController *tempNav = [[UINavigationController alloc] initWithRootViewController:_mainVC];
-    self.mainNav = tempNav;
-    _mainNav.navigationBarHidden = YES;
-    
-    self.window.rootViewController = _mainNav;
+    ViewController *mainVC = [[ViewController alloc] init];
+    self.window.rootViewController = mainVC;
     [_window makeKeyAndVisible];
 }
 
