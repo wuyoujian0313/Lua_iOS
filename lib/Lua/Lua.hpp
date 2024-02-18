@@ -9,3 +9,4 @@
 #import <Lua/lualib.h>
 #import <Lua/lauxlib.h>
 #import <Lua/luaconf.h>
+#import <Lua/wm_lua_cwrapper.h>

@@ -12,7 +12,7 @@
 		AF7F6F9A208107E7000A8C4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F6F99208107E7000A8C4C /* main.m */; };
 		CEA7F3DC2B4F9A5B0064090F /* luascript in Resources */ = {isa = PBXBuildFile; fileRef = CEA7F3DB2B4F9A5B0064090F /* luascript */; };
 		CEA7F4FD2B50D6B50064090F /* WMLuaRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA7F4FC2B50D6B50064090F /* WMLuaRunner.m */; };
-		CEA7F5292B5140730064090F /* Lua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA7F5282B5140730064090F /* Lua.framework */; };
+		CEB2B4842B5668740067C398 /* Lua.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA7F5282B5140730064090F /* Lua.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +24,10 @@
 		AF7F6F98208107E7000A8C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF7F6F99208107E7000A8C4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEA7F3DB2B4F9A5B0064090F /* luascript */ = {isa = PBXFileReference; lastKnownFileType = folder; path = luascript; sourceTree = "<group>"; };
-		CEA7F4EA2B4FF7B10064090F /* lua.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = lua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA7F4FB2B50D6B50064090F /* WMLuaRunner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMLuaRunner.h; sourceTree = "<group>"; };
 		CEA7F4FC2B50D6B50064090F /* WMLuaRunner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMLuaRunner.m; sourceTree = "<group>"; };
 		CEA7F5282B5140730064090F /* Lua.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB2B48C2B5674000067C398 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA7F5292B5140730064090F /* Lua.framework in Frameworks */,
+				CEB2B4842B5668740067C398 /* Lua.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,8 +77,8 @@
 		CEA7F4E92B4FF7B10064090F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEB2B48C2B5674000067C398 /* IOKit.framework */,
 				CEA7F5282B5140730064090F /* Lua.framework */,
-				CEA7F4EA2B4FF7B10064090F /* lua.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

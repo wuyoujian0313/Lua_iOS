@@ -66,6 +66,9 @@
 		CE0BD51F2B3D8A75008A9B02 /* llex.c in Sources */ = {isa = PBXBuildFile; fileRef = CE0BD4FA2B3D8A75008A9B02 /* llex.c */; };
 		CE0BD5202B3D8A75008A9B02 /* ltm.c in Sources */ = {isa = PBXBuildFile; fileRef = CE0BD4FC2B3D8A75008A9B02 /* ltm.c */; };
 		CE0BD5212B3D8A75008A9B02 /* ldo.c in Sources */ = {isa = PBXBuildFile; fileRef = CE0BD4FE2B3D8A75008A9B02 /* ldo.c */; };
+		CE0CBF752B58B2B100D0693B /* wm_lua_object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE0CBF732B58B2B100D0693B /* wm_lua_object.cpp */; };
+		CE0CBF762B58B2B100D0693B /* wm_lua_object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE0CBF732B58B2B100D0693B /* wm_lua_object.cpp */; };
+		CE0CBF772B58B2B100D0693B /* wm_lua_object.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CE0CBF742B58B2B100D0693B /* wm_lua_object.hpp */; };
 		CEA7F4A02B4FE3DD0064090F /* lauxlib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE0BD4ED2B3D8A75008A9B02 /* lauxlib.h */; };
 		CEA7F4A12B4FE3DD0064090F /* lua.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE0BD4F52B3D8A75008A9B02 /* lua.h */; };
 		CEA7F4A22B4FE3DD0064090F /* luaconf.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE0BD4C52B3D8A75008A9B02 /* luaconf.h */; };
@@ -109,6 +112,13 @@
 		CEA7F4DA2B4FE9B50064090F /* lvm.c in Sources */ = {isa = PBXBuildFile; fileRef = CE0BD4D12B3D8A75008A9B02 /* lvm.c */; };
 		CEA7F4DB2B4FE9B50064090F /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = CE0BD4E92B3D8A75008A9B02 /* lzio.c */; };
 		CEA7F4FF2B512B7F0064090F /* Lua.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CEA7F4FE2B512B7F0064090F /* Lua.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEB2B47B2B565C820067C398 /* wm_lua_class.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEB2B4792B565C820067C398 /* wm_lua_class.cpp */; };
+		CEB2B47C2B565C820067C398 /* wm_lua_class.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEB2B4792B565C820067C398 /* wm_lua_class.cpp */; };
+		CEB2B47D2B565C820067C398 /* wm_lua_class.h in Headers */ = {isa = PBXBuildFile; fileRef = CEB2B47A2B565C820067C398 /* wm_lua_class.h */; };
+		CEB2B4802B565F2A0067C398 /* wm_lua_cwrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEB2B47E2B565F2A0067C398 /* wm_lua_cwrapper.cpp */; };
+		CEB2B4812B565F2A0067C398 /* wm_lua_cwrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEB2B47E2B565F2A0067C398 /* wm_lua_cwrapper.cpp */; };
+		CEB2B4822B565F2A0067C398 /* wm_lua_cwrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = CEB2B47F2B565F2A0067C398 /* wm_lua_cwrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEB2B4832B5665590067C398 /* wm_lua_cwrapper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEB2B47F2B565F2A0067C398 /* wm_lua_cwrapper.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -118,6 +128,7 @@
 			dstPath = include/headers;
 			dstSubfolderSpec = 16;
 			files = (
+				CEB2B4832B5665590067C398 /* wm_lua_cwrapper.h in CopyFiles */,
 				CEA7F4A52B4FE4030064090F /* lua.hpp in CopyFiles */,
 				CEA7F4A02B4FE3DD0064090F /* lauxlib.h in CopyFiles */,
 				CEA7F4A12B4FE3DD0064090F /* lua.h in CopyFiles */,
@@ -192,8 +203,14 @@
 		CE0BD4FD2B3D8A75008A9B02 /* lctype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lctype.h; sourceTree = "<group>"; };
 		CE0BD4FE2B3D8A75008A9B02 /* ldo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ldo.c; sourceTree = "<group>"; };
 		CE0BD4FF2B3D8A75008A9B02 /* lundump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lundump.h; sourceTree = "<group>"; };
+		CE0CBF732B58B2B100D0693B /* wm_lua_object.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wm_lua_object.cpp; sourceTree = "<group>"; };
+		CE0CBF742B58B2B100D0693B /* wm_lua_object.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = wm_lua_object.hpp; sourceTree = "<group>"; };
 		CEA7F4E12B4FE9B50064090F /* Lua.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lua.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA7F4FE2B512B7F0064090F /* Lua.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Lua.hpp; sourceTree = "<group>"; };
+		CEB2B4792B565C820067C398 /* wm_lua_class.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wm_lua_class.cpp; sourceTree = "<group>"; };
+		CEB2B47A2B565C820067C398 /* wm_lua_class.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wm_lua_class.h; sourceTree = "<group>"; };
+		CEB2B47E2B565F2A0067C398 /* wm_lua_cwrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wm_lua_cwrapper.cpp; sourceTree = "<group>"; };
+		CEB2B47F2B565F2A0067C398 /* wm_lua_cwrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wm_lua_cwrapper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +251,7 @@
 		CE0BD4B72B3D896C008A9B02 /* Lua */ = {
 			isa = PBXGroup;
 			children = (
+				CEB2B4692B5629200067C398 /* lua_runtime */,
 				CE0BD4C12B3D8A75008A9B02 /* lua */,
 				CEA7F4FE2B512B7F0064090F /* Lua.hpp */,
 			);
@@ -309,6 +327,19 @@
 			path = lua;
 			sourceTree = "<group>";
 		};
+		CEB2B4692B5629200067C398 /* lua_runtime */ = {
+			isa = PBXGroup;
+			children = (
+				CEB2B4792B565C820067C398 /* wm_lua_class.cpp */,
+				CEB2B47A2B565C820067C398 /* wm_lua_class.h */,
+				CEB2B47E2B565F2A0067C398 /* wm_lua_cwrapper.cpp */,
+				CEB2B47F2B565F2A0067C398 /* wm_lua_cwrapper.h */,
+				CE0CBF732B58B2B100D0693B /* wm_lua_object.cpp */,
+				CE0CBF742B58B2B100D0693B /* wm_lua_object.hpp */,
+			);
+			path = lua_runtime;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -317,10 +348,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA7F4B62B4FE9B50064090F /* lauxlib.h in Headers */,
+				CEB2B47D2B565C820067C398 /* wm_lua_class.h in Headers */,
+				CE0CBF772B58B2B100D0693B /* wm_lua_object.hpp in Headers */,
 				CEA7F4B72B4FE9B50064090F /* lualib.h in Headers */,
 				CEA7F4FF2B512B7F0064090F /* Lua.hpp in Headers */,
 				CEA7F4B82B4FE9B50064090F /* lua.h in Headers */,
 				CEA7F4B92B4FE9B50064090F /* luaconf.h in Headers */,
+				CEB2B4822B565F2A0067C398 /* wm_lua_cwrapper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,10 +486,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0CBF752B58B2B100D0693B /* wm_lua_object.cpp in Sources */,
 				CE0BD5172B3D8A75008A9B02 /* lmem.c in Sources */,
 				CE0BD5202B3D8A75008A9B02 /* ltm.c in Sources */,
 				CE0BD5112B3D8A75008A9B02 /* ldump.c in Sources */,
 				CE0BD5152B3D8A75008A9B02 /* ldblib.c in Sources */,
+				CEB2B4802B565F2A0067C398 /* wm_lua_cwrapper.cpp in Sources */,
 				CE0BD50A2B3D8A75008A9B02 /* lua.c in Sources */,
 				CE0BD5082B3D8A75008A9B02 /* lfunc.c in Sources */,
 				CE0BD5022B3D8A75008A9B02 /* lopcodes.c in Sources */,
@@ -465,6 +501,7 @@
 				CE0BD5042B3D8A75008A9B02 /* lobject.c in Sources */,
 				CE0BD5132B3D8A75008A9B02 /* lgc.c in Sources */,
 				CE0BD5192B3D8A75008A9B02 /* lcode.c in Sources */,
+				CEB2B47B2B565C820067C398 /* wm_lua_class.cpp in Sources */,
 				CE0BD50C2B3D8A75008A9B02 /* lstring.c in Sources */,
 				CE0BD51C2B3D8A75008A9B02 /* lbaselib.c in Sources */,
 				CE0BD5072B3D8A75008A9B02 /* lvm.c in Sources */,
@@ -509,13 +546,16 @@
 				CEA7F4C82B4FE9B50064090F /* liolib.c in Sources */,
 				CEA7F4C92B4FE9B50064090F /* llex.c in Sources */,
 				CEA7F4CA2B4FE9B50064090F /* lmathlib.c in Sources */,
+				CEB2B47C2B565C820067C398 /* wm_lua_class.cpp in Sources */,
 				CEA7F4CB2B4FE9B50064090F /* lmem.c in Sources */,
 				CEA7F4CC2B4FE9B50064090F /* loadlib.c in Sources */,
 				CEA7F4CD2B4FE9B50064090F /* lobject.c in Sources */,
 				CEA7F4CE2B4FE9B50064090F /* lopcodes.c in Sources */,
 				CEA7F4CF2B4FE9B50064090F /* loslib.c in Sources */,
 				CEA7F4D02B4FE9B50064090F /* lparser.c in Sources */,
+				CEB2B4812B565F2A0067C398 /* wm_lua_cwrapper.cpp in Sources */,
 				CEA7F4D12B4FE9B50064090F /* lstate.c in Sources */,
+				CE0CBF762B58B2B100D0693B /* wm_lua_object.cpp in Sources */,
 				CEA7F4D22B4FE9B50064090F /* lstring.c in Sources */,
 				CEA7F4D32B4FE9B50064090F /* lstrlib.c in Sources */,
 				CEA7F4D42B4FE9B50064090F /* ltable.c in Sources */,

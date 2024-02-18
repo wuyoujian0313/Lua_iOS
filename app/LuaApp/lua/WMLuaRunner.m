@@ -106,7 +106,8 @@ int callLua_add(lua_State*L, int a, int b) {
     // 注册满足签名的C函数到Lua虚拟机
     lua_register(L,"c_add",callC_add);
     
-    
+    wm_registerCFunctions(L);
+
     // 加载lua脚本
     int result = luaL_loadstring(L, [luaScript UTF8String]);
     if (result != 0) {
