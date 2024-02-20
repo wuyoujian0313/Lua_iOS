@@ -97,8 +97,8 @@ int wm_property_copyAttributeValue(lua_State *L) {
     strcpy(name, attrName);
     
     char* propertyName = property_copyAttributeValue(property,name);
+    if(name) free(name);
     if (propertyName == nullptr) {
-        if(name) free(name);
         lua_pushnil(L);
         return 1;
     }

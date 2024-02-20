@@ -51,6 +51,7 @@ int wm_object_setInstanceVariable(lua_State *L) {
     
     lua_pop(L,3);
     Ivar var = object_setInstanceVariable(caller,name,value);
+    if (name != nullptr) free(name);
     if (var == nullptr) {
         lua_pushboolean(L, 0);
         return 1;
@@ -98,6 +99,7 @@ int wm_object_getInstanceVariable(lua_State *L) {
     
     lua_pop(L,3);
     Ivar var = object_getInstanceVariable(caller,name,value);
+    if (name != nullptr) free(name);
     if (var == nullptr) {
         lua_pushboolean(L, 0);
         return 1;
@@ -295,11 +297,12 @@ int wm_objc_lookUpClass(lua_State *L) {
     strcpy(classname, name);
     
     if(classname == nullptr) {
+        if (classname != nullptr) free(classname);
         lua_pushnil(L);
         return 1;
     }
     Class cls = objc_lookUpClass(classname);
-    free(classname);
+    if (classname != nullptr) free(classname);
     
     if (cls == nullptr) {
         lua_pushnil(L);
@@ -331,11 +334,12 @@ int wm_objc_getClass(lua_State *L) {
     strcpy(classname, name);
     
     if(classname == nullptr) {
+        if (classname != nullptr) free(classname);
         lua_pushnil(L);
         return 1;
     }
     Class cls = objc_getClass(classname);
-    free(classname);
+    if (classname != nullptr) free(classname);
     
     if (cls == nullptr) {
         lua_pushnil(L);
@@ -367,11 +371,12 @@ int wm_objc_getRequiredClass(lua_State *L) {
     strcpy(classname, name);
     
     if(classname == nullptr) {
+        if (classname != nullptr) free(classname);
         lua_pushnil(L);
         return 1;
     }
     Class cls = objc_getRequiredClass(classname);
-    free(classname);
+    if (classname != nullptr) free(classname);
     
     if (cls == nullptr) {
         lua_pushnil(L);
@@ -402,11 +407,12 @@ int wm_objc_getMetaClass(lua_State *L) {
     strcpy(classname, name);
     
     if(classname == nullptr) {
+        if (classname != nullptr) free(classname);
         lua_pushnil(L);
         return 1;
     }
     Class cls = objc_getMetaClass(classname);
-    free(classname);
+    if (classname != nullptr) free(classname);
     
     if (cls == nullptr) {
         lua_pushnil(L);
