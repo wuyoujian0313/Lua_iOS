@@ -1,8 +1,8 @@
 //
-//  wm_lua_property.hpp
+//  wm_lua_block.h
 //  Lua
 //
-//  Created by youjian on 2024/2/19.
+//  Created by youjian on 2024/2/20.
 //
 
 #pragma once
@@ -16,7 +16,9 @@ extern "C" {
 
 
 
-void wm_registerPropertyFunctions(lua_State *L);
+
+
+void wm_registerBlockFunctions(lua_State *L);
 
 
 #ifdef __cplusplus

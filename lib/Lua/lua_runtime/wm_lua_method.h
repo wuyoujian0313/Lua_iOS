@@ -1,10 +1,9 @@
 //
-//  wm_lua_protocol.hpp
+//  wm_lua_method.h
 //  Lua
 //
 //  Created by youjian on 2024/2/19.
 //
-
 #pragma once
 #ifdef __cplusplus
 extern "C" {
@@ -14,7 +13,8 @@ extern "C" {
 #include "lualib.h"
 #include "lauxlib.h"
 
-void wm_registerProtocolFunctions(lua_State *L);
+
+void wm_registerMethodFunctions(lua_State *L);
 
 
 #ifdef __cplusplus

@@ -126,9 +126,33 @@ int callLua_add(lua_State*L, int a, int b) {
         return;
     }
     
-    // 调用Lua脚本的add函数
-    int ret = callLua_add(L,1,2);
-    NSLog(@"打印调用Lua的add函数的结果：%d",ret);
+//    // 调用Lua脚本的add函数
+//    int ret = callLua_add(L,1,2);
+//    NSLog(@"打印调用Lua的add函数的结果：%d",ret);
+    
+    lua_getglobal(L, "dump");
+    lua_newtable(L);
+    
+    lua_pushstring(L, "Sun");
+    lua_setfield(L, -2, "name");
+    
+    lua_pushnumber(L, 999);
+    lua_rawseti(L, -2, 6);
+    
+    int top = lua_gettop(L);
+    
+//    lua_getglobal(L, "table");
+//    top = lua_gettop(L);
+//    lua_pushstring(L, "name");
+//    lua_gettable(L, -2);
+    lua_getfield(L, -1, "name");
+    const char *str = lua_tostring(L, -1);
+    NSLog(@"%s",str);
+    
+    lua_pcall(L,1,0,0);
+    
+    
+    
     
     // 关闭库
     lua_close(L);

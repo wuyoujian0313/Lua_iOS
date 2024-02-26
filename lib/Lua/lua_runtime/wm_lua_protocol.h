@@ -1,5 +1,5 @@
 //
-//  wm_lua_sel.hpp
+//  wm_lua_protocol.h
 //  Lua
 //
 //  Created by youjian on 2024/2/19.
@@ -14,11 +14,7 @@ extern "C" {
 #include "lualib.h"
 #include "lauxlib.h"
 
-
-
-
-
-void wm_registerSelFunctions(lua_State *L);
+void wm_registerProtocolFunctions(lua_State *L);
 
 
 #ifdef __cplusplus

@@ -1,8 +1,8 @@
 //
-//  wm_lua_object.hpp
+//  wm_lua_sel.h
 //  Lua
 //
-//  Created by youjian on 2024/1/18.
+//  Created by youjian on 2024/2/19.
 //
 
 #pragma once
@@ -18,7 +18,7 @@ extern "C" {
 
 
 
-void wm_registerObjectFunctions(lua_State *L);
+void wm_registerSelFunctions(lua_State *L);
 
 
 #ifdef __cplusplus

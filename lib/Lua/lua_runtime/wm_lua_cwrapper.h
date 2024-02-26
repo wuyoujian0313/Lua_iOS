@@ -1,5 +1,5 @@
 //
-//  wm_lua_cwrapper.hpp
+//  wm_lua_cwrapper.h
 //  Lua
 //
 //  Created by youjian on 2024/1/16.

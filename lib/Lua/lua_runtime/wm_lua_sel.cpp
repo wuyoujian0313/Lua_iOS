@@ -8,7 +8,7 @@
 extern "C" {
 #endif
 
-#include "wm_lua_sel.hpp"
+#include "wm_lua_sel.h"
 #include <string.h>
 #import <objc/runtime.h>
 #import <objc/message.h>

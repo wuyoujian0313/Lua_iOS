@@ -9,7 +9,7 @@
 extern "C" {
 #endif
 
-#include "wm_lua_property.hpp"
+#include "wm_lua_property.h"
 #include <string.h>
 #import <objc/runtime.h>
 #import <objc/message.h>
