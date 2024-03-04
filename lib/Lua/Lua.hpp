@@ -10,3 +10,7 @@
 #import <Lua/lauxlib.h>
 #import <Lua/luaconf.h>
 #import <Lua/wm_lua_cwrapper.h>
+
+#import <Lua/LuaObjc.h>
+#import <Lua/LuaState.h>
+#import <Lua/LuaUtils.h>

@@ -126,9 +126,9 @@ int callLua_add(lua_State*L, int a, int b) {
         return;
     }
     
-//    // 调用Lua脚本的add函数
-//    int ret = callLua_add(L,1,2);
-//    NSLog(@"打印调用Lua的add函数的结果：%d",ret);
+    // 调用Lua脚本的add函数
+    int ret = callLua_add(L,1,2);
+    NSLog(@"打印调用Lua的add函数的结果：%d",ret);
     
     lua_getglobal(L, "dump");
     lua_newtable(L);

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		087EB2242B90896C00F15A3C /* hot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 087EB2222B90896C00F15A3C /* hot@2x.png */; };
+		087EB2252B90896C00F15A3C /* hot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 087EB2232B90896C00F15A3C /* hot@3x.png */; };
 		AF7F6F8C208107E7000A8C4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F6F8B208107E7000A8C4C /* AppDelegate.m */; };
 		AF7F6F8F208107E7000A8C4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F6F8E208107E7000A8C4C /* ViewController.m */; };
 		AF7F6F9A208107E7000A8C4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F6F99208107E7000A8C4C /* main.m */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		087EB2222B90896C00F15A3C /* hot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hot@2x.png"; sourceTree = "<group>"; };
+		087EB2232B90896C00F15A3C /* hot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hot@3x.png"; sourceTree = "<group>"; };
 		AF7F6F87208107E7000A8C4C /* LuaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7F6F8A208107E7000A8C4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF7F6F8B208107E7000A8C4C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 				AF7F6F8B208107E7000A8C4C /* AppDelegate.m */,
 				AF7F6F8D208107E7000A8C4C /* ViewController.h */,
 				AF7F6F8E208107E7000A8C4C /* ViewController.m */,
+				087EB2222B90896C00F15A3C /* hot@2x.png */,
+				087EB2232B90896C00F15A3C /* hot@3x.png */,
 				AF7F6F98208107E7000A8C4C /* Info.plist */,
 				AF7F6F99208107E7000A8C4C /* main.m */,
 			);
@@ -150,6 +156,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				087EB2242B90896C00F15A3C /* hot@2x.png in Resources */,
+				087EB2252B90896C00F15A3C /* hot@3x.png in Resources */,
 				CEA7F3DC2B4F9A5B0064090F /* luascript in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
