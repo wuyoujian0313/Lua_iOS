@@ -64,8 +64,6 @@
     
     LuaState *luaState = [self luaState];
     [luaState runFunctionNamed:@"addButton" arguments:@[self] rvalues:nil options:0 error:nil];
-    
-//    [[WMLuaRunner getInstance] runLua:luaScript];
 }
 
 - (void)didReceiveMemoryWarning {

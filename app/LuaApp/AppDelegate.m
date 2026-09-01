@@ -8,6 +8,56 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import <objc/runtime.h>
+
+
+@implementation Person
+
++ (BOOL)supportsSecureCoding {
+    return YES;
+}
+
+
++ (id)deepCopyOfObject:(id)object {
+    NSError *err;
+    NSData *d = [NSKeyedArchiver archivedDataWithRootObject:object requiringSecureCoding:YES error:&err];
+    id obj = [NSKeyedUnarchiver unarchivedObjectOfClass:[Person class] fromData:d error:&err];
+    return obj;
+}
+
+- (nonnull id)copyWithZone:(nullable NSZone *)zone {
+    Person *model = [[[self class] allocWithZone:zone] init];
+    model.name = [NSString stringWithUTF8String:self.name.UTF8String];
+//    model.age = self.age;
+//    unsigned int count = 0;
+//    objc_property_t *properties = class_copyPropertyList([self class], &count);
+//    for (int i = 0; i<count; i++) {
+//        objc_property_t property = properties[i];
+//        const char *name = property_getName(property);
+//        NSString *propertyName = [NSString stringWithUTF8String:name];
+//        id value = [[self valueForKey:propertyName] copy];
+//        if (value) {
+//            [model setValue:value forKey:propertyName];
+//        }
+//    }
+//    free(properties);
+    return model;
+}
+
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [coder encodeObject:_name forKey:@"name"];
+    [coder encodeObject:@(_age) forKey:@"age"];
+}
+- (id)initWithCoder:(NSCoder *)coder {
+    if (self = [super init]) {
+        _name = [coder decodeObjectForKey:@"name"];
+        _age = [[coder decodeObjectForKey:@"age"] integerValue];
+    }
+    return self;
+}
+
+
+@end
 
 @interface AppDelegate ()
 @end
@@ -28,6 +78,39 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self layoutMainPage];
+    
+    Person *p1 = [[Person alloc] init];
+    p1.name = [NSString stringWithFormat:@"%@",@"wuyj"];
+//    p1.age = 30;
+    
+    Person *p2 = [Person deepCopyOfObject:p1];
+    
+    NSLog(@"%@,%@",p1,p2);
+    
+    int fire = 90;
+    int dur = 15;
+    int gap = 60;
+    int loop = dur + gap;
+    
+    int num = (60-90) / loop;
+    
+    NSArray *arr = @[@1,@2,@3,@4];
+    
+    for (NSNumber*n in arr) {
+        NSLog(@"-----:%d",n.intValue);
+        break;
+    }
+    
+    
+    NSMutableArray *array = [NSMutableArray arrayWithObjects:[NSNumber numberWithInt:3],[NSNumber numberWithInt:1],[NSNumber numberWithInt:2], nil];
+    [array sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
+        if ([obj1 integerValue] > [obj2 integerValue]) {
+            return NSOrderedAscending;
+        }
+        
+        return NSOrderedDescending;
+    }];
+    
     return YES;
 }
 

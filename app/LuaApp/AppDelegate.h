@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+
+@interface Person : NSObject<NSSecureCoding>
+@property(nonatomic,strong)NSString* name;
+@property(nonatomic,assign)NSInteger age;
+
++ (id)deepCopyOfObject:(id)object;
+@end
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (strong, nonatomic) UIWindow *window;
 
